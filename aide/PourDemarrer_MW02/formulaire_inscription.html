@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>BTS SNIR - Dev WEB</title>
+        <link rel="stylesheet" type="text/css" href="formulaire.css">
+    </head>
+
+    <body>
+        <h1>Inscrivez-vous !</h1>
+        <form id="form_inscription">
+            <label for="nom">Nom : </label>
+            <input type="text" id="nom" name="nom_utilisateur" required>
+            <label for="prenom">Prénom : </label>
+            <input type="text" id="prenom" name="prenom_utilisateur" required>
+            <label for="adresse_mail">adresse mail:</label>
+            <input type="text" id="adresse_mail" name="adresse_mail" required>
+            <label for="date_de_naissance">date de naissance:</label>
+            <input type="date" id="date_de_naissance" name="date_de_naissance"required>
+            <label for="pseudo">Pseudo : </label>
+            <input type="text" id="pseudo" name="pseudo_utilisateur" required>
+            <label for="mdp1">Mot de passe: </label>
+            <input type="password" id="mdp1" name="mdp1_utilisateur" required>
+            <span id="mdp_longueur" class="rouge">8 caractère</span>avec au moins: <span id="mdp_minuscule" class="rouge">1 lettre minuscule</span> 
+            <span id="mdp_majuscule" class="rouge">lettre majuscule</span>
+            <span id="mdp_chiffre" class="rouge"> 1 chiffre</span>
+            <span id="mdp_special" class="rouge">1 carractere spécial</span>
+            <label for="mdp2">Ressaisir le mot de passe: </label>
+            <input type="password" id="mdp2" name="mdp2_utilisateur" required>
+            <button id="bouton_inscription" class="fond_bleu police_blanche" type="submit">M'inscrire !</button>
+        </form><script src="formulaire.js"></script>
+    </body>
+</html>
